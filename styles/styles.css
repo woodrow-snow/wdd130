@@ -4,6 +4,12 @@
     --border_width: 1px;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav {
     background-color: var(--background-color);
     padding: 10px
@@ -25,6 +31,8 @@ main img {
     border: var(--border_width) solid var(--border-color);
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
+    margin-left: 10px;
 }
 
 p {
@@ -36,21 +44,41 @@ main {
 }
 
 aside {
-    width: 400px;
-    margin: 30px 15px;
-    border: var(--border_width) solid rgb(0 0 0 / 0.2);
-    padding: 5px;
-    background-color: var(--background-color);
-    color: white;
+    width: 450px;
+    position: relative;
 }
 
 aside img {
-    width: 200px;
+    width: 400px;
     height: auto;
+}
+
+aside h2 {
+    position: absolute;
+    top: 25px;
+    right: 75px;
 }
 
 footer {
     margin-top: 20px;
     border-top: var(--border_width) solid var(--border-color);
     text-align: center;
+}
+
+li a {
+    color: white
+}
+
+/* Class Selectors */
+
+.box {
+    margin: 1rem;
+    border: var(--border_width) solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: var(--background-color);
+    color: white;
+}
+
+.temples {
+    margin-top: 10px;
 }
