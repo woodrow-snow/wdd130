@@ -1,0 +1,75 @@
+:root {
+    --primary-color: #08605F; /* Caribbean Current */
+    --secondary-color: #177E89; /* Teal */
+    --accent1-color: #EAC5D8; /* Fairy Tale */
+    --accent2-color: #DBD8F0; /* Lavender (web) */
+    --heading-font: 'Sriracha', 'Brush Cript MT', Arial;
+    --body-font: "Ubuntu", Tahoma, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--primary-color);
+}
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--accent2-color);
+    background-color: var(--secondary-color);
+}
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+article {
+    position: absolute;
+    background-color: var(--primary-color);
+    opacity: 1;
+    top: 75px;
+    right: 10px;
+    color: var(--accent2-color);
+    width: 250px;
+    border: 1px solid black;
+}
+.hero article img {
+    float: right;
+    width: 125px;
+    margin: 2px;
+}
