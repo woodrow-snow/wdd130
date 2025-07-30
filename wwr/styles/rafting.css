@@ -194,7 +194,7 @@ footer nav{
     grid-row: 2/3;
 }
 
-#email {
+#ouremail {
     grid-column: 3/4;
     grid-row: 2/3;
 }
@@ -230,11 +230,11 @@ footer nav{
 
 .teaminfo img {
     width: 10rem;
-    height: auto;
+    max-height: 234;
 }
 
 .teaminfo p {
-    text-wrap: warp;
+    text-wrap: wrap;
     text-align: center;
 }
 
@@ -308,3 +308,9 @@ fieldset div {
     margin: .5rem 0;
 }
 
+#contact-header {
+    position: static;
+    margin: 1.5rem 0;
+    border: 2px solid var(--primary-color);
+    opacity: 1;
+}
