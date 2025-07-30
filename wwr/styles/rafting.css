@@ -1,10 +1,10 @@
 :root {
-    --primary-color: #08605F; /* Caribbean Current */
-    --secondary-color: #177E89; /* Teal */
-    --accent1-color: #EAC5D8; /* Fairy Tale */
-    --accent2-color: #DBD8F0; /* Lavender (web) */
+    --primary-color: #3F403F; /* Onyx */
+    --secondary-color: #475841; /* Feldgrau */
+    --accent1-color: #9FB8AD; /* Ash Gray */
+    --accent2-color: #CED0CE; /* Timber Wolf */
     --heading-font: 'Sriracha', 'Brush Cript MT', Arial;
-    --body-font: "Ubuntu", Tahoma, sans-serif;
+    --body-font: "Ubuntu:ital", Tahoma, sans-serif;
 }
 
 * {
@@ -16,6 +16,10 @@
 body {
     font-family: var(--body-font);
     color: var(--primary-color);
+}
+
+p{
+    font-family: var(--body-font);
 }
 
 header, main, footer {
@@ -62,6 +66,7 @@ h1, h2 {
     font-family: var(--heading-font);
     color: var(--accent2-color);
     background-color: var(--secondary-color);
+    border-radius: 5px;
 }
 
 nav, p, section, article {
@@ -165,5 +170,141 @@ figcaption{
 
 footer nav{
     background-color: var(--accent1-color);
+}
+
+.contactinfo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto 1fr;
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    margin: 0;
+    
+}
+
+.contactinfo h2 {
+    grid-column: 1/4;
+    justify-self: stretch;
+    align-self: start;
+}
+
+#address {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#email {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+#phone {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    
+}
+
+.map {
+    grid-area: 4 / 1 / 5 / 4;
+}
+
+.contactinfo h3 {
+    padding: 0.5rem;
+}
+
+.contactinfo p {
+    text-align: center;
+}
+
+.teaminfo {
+    display: grid;
+    grid-gap: 10px;
+    margin: 0;
+    grid-template-columns: repeat(5, auto);
+}
+
+.teaminfo h2 {
+    grid-column: 1/6;
+}
+
+.teaminfo img {
+    width: 10rem;
+    height: auto;
+}
+
+.teaminfo p {
+    text-wrap: warp;
+    text-align: center;
+}
+
+.contact h2{
+   width: 824px;
+   margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    grid-template: repeat(4, auto) / repeat(4, auto);
+    grid-gap: 10px;
+    font-family: var(--body-font);
+}
+
+.formname {
+    grid-column: 1/3;
+    margin-left: 1.5rem;
+}
+
+.formemail{
+    grid-column: 3/5;
+}
+
+.formemail, .formname {
+    font-size: larger;
+    justify-self: left;
+}
+
+input[type=text], input[type=email] {
+    font-size: large;
+} 
+
+.message {
+    grid-column: 2/5;
+    margin: 10px 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message label{
+    margin-bottom:5px;
+}
+
+textarea {
+    max-width: 528px;
+}
+
+.news {
+    grid-area: 3/1/4/5;
+    font-size: large;
+    text-wrap: wrap;
+    /* width: 175px; */
+    justify-self: center;
+}
+
+.contact button {
+    grid-area: 4/1/5/5;
+    font-size: large;
+    justify-self: center;
+    padding: 5px;
+}
+
+fieldset {
+    padding: 10px;
+    max-width: 200px;
+    justify-self: center;   
+}
+
+fieldset div {
+    margin: .5rem 0;
 }
 
