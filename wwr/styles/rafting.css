@@ -314,3 +314,17 @@ fieldset div {
     border: 2px solid var(--primary-color);
     opacity: 1;
 }
+
+.wireframe {
+    margin: 0 0 1rem 1rem;
+    text-align: center;
+}
+
+.wireframe a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.wireframe a:hover {
+    color: var(--accent1-color)
+}
