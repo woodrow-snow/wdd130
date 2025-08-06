@@ -67,6 +67,7 @@ h1, h2 {
     color: var(--accent2-color);
     background-color: var(--secondary-color);
     border-radius: 5px;
+    margin-bottom: 1.5rem;
 }
 
 nav, p, section, article {
@@ -76,14 +77,16 @@ nav, p, section, article {
 
 .socialmedia a {
     text-decoration: none;
-    /* margin-left: 10px;
-    margin-right: 10px; */
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 50px;
+    height: auto;
 }
 
 .socialmedia {
     display: flex;
     justify-content: end;
-    gap: 3%;
+    gap: 1%;
 }
 
 .instagram {
@@ -98,6 +101,8 @@ nav, p, section, article {
     display: block;
     width: 100%;
     height: auto;
+    border-radius: 5px;
+    margin-top: 1.5rem;
 }
 
 h1 {
@@ -240,7 +245,6 @@ footer nav{
 
 .contact h2{
    width: 824px;
-   margin-bottom: 20px;
 }
 
 form {
@@ -327,4 +331,241 @@ fieldset div {
 
 .wireframe a:hover {
     color: var(--accent1-color)
+}
+
+/* adding css for index.html page */
+
+.index-h1 {
+    height: 10rem;
+    padding-top: 1.5rem;
+    font-size: 4rem;
+    top: 9.5rem;
+    opacity: 0.9;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.newsletter h2, h3, h4 {
+    margin: 1rem;
+}
+
+.newsletter h2 {
+    width: 792px;
+    align-self: center;
+}
+
+.newsletter form {
+    display:flex;
+    flex-direction: column;
+    width: auto;
+    align-self: center;
+    font-size: large;
+}
+
+.newsletter form input {
+    height: 2rem;
+    width: 20rem;
+}
+
+.newsletter form label {
+    color: var(--primary-color);
+}
+
+.newsletter form button {
+    font-size: larger;
+    width: 40%;
+    align-self: center;
+    padding: 2px;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    margin-top: .5rem;
+}
+
+.newsletter form button:hover {
+    color: var(--accent2-color);
+    background-color: var(--primary-color);
+}
+
+.schedule {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    width: 20%;
+    align-self: center;
+    font-size: larger;
+}
+
+.button-link:hover {
+    color: var(--accent2-color);
+    background-color: var(--primary-color);
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    align-items: center;
+    justify-items: center;
+}
+
+.info-grid img {
+    width: 209px;
+    height: auto;
+}
+
+#info-1 {
+    grid-area: 1/2/2/3;
+}
+
+#info-2 {
+    grid-area: 2/1/3/2;
+}
+
+#info-3 {
+    grid-area: 3/2/4/3
+}
+
+#info-4 {
+    grid-area: 2/3/3/4;
+}
+
+.info-grid p {
+    width: 209px;
+    height: 209px;
+}
+
+#info-img-2 {
+    grid-area: 2/2/3/3;
+}
+
+/* Trips Page additional CSS */
+
+#trips-h1 {
+    position: static;
+    opacity: 1.0;
+    border: 2px solid var(--primary-color);
+    margin-top: 1.5rem;
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-us a {
+    align-self: center;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    width: 20%;
+    font-size: larger;
+}
+
+.contact-us a:hover {
+    color: var(--accent2-color);
+    background-color: var(--primary-color);
+}
+
+.trips-info section {
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    padding: 15px;
+}
+
+.trip-headers{
+    grid-column: 1 / 4;
+    border: 2px solid var(--secondary-color);
+    border-radius: 4px;
+    padding: 2px 0px 2px 2.5rem;
+    background-color: var(--accent2-color);
+}
+
+#trip-1 img, #trip-2 img, #trip-3, img {
+    width: 100%;
+}
+
+.trip-img-1 {
+    grid-area: 2/1/3/2;
+}
+
+.trip-img-2 {
+    grid-area: 2/2/3/3;
+}
+
+.trip-img-3 {
+    grid-area: 3/1/4/3;
+}
+
+.trip-text {
+    grid-area: 2/3/4/5;
+    align-self: center;
+}
+
+.trip-texta {
+    grid-area: 2/1/4/3;
+    align-self: center;
+}
+
+.trip-img-1a {
+    grid-area: 2/3/3/4;
+}
+
+.trip-img-2a {
+    grid-area: 2/4/3/5;
+}
+
+.trip-img-3a {
+    grid-column: 3/5;
+}
+
+#trip-2 h3 {
+    grid-column: 2/5;
+    text-align: right;
+    padding: 2px 2.5rem 2px 0;
+}
+
+#trip-3 {
+    width: 760px;
+}
+
+#info-for-trips {
+    display: flex;
+    flex-direction: column;
+}
+
+table {
+    width: 95%;
+    align-self: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: .7rem;
+    border-collapse: collapse;
+    border-radius: 5px;
 }
